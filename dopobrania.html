@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Do pobrania.</title>
+	<meta name="keywords" content="gry, nowości, zakupy, games" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<script type="text/javascript" src="timer.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body onload="zmienslajd(), odliczanie()">
+<div class ="wrapper"> 
+			<div class="header">
+				<div class="logo"><a href="index.html" class="tilelink"><span style="color: #01a1FF">Poje</span>grane.pl <img src="logo1.png" width="50" height="50" style=" position:absolute; left: 0px; top: 11px;">
+				</a>
+				</div>
+				
+				<div class="menu" class="tilelink">
+					<ol>
+					<li><a href="#"><span style="color: #01a1FF">Zareje</span>struj się</a></li>
+					<li><a href="#"><span style="color: #01a1FF">Zalo</span>guj się</a></li>
+					<li><a href="#"><span style="color: #01a1FF">O n</span>as</a></li>
+					<li><a href="#"><span style="color: #01a1FF">Kont</span>akt</a></li>
+					<li><a href="index.html"><span style="color: #01a1FF">Me</span>nu</a>
+						<ul>
+							<li><a href="#"><span style="color: #01a1FF">New</span>sy</a></li>
+							<li><a href="#"><span style="color: #01a1FF">Top mi</span>esiąca</a></li>
+							<li><a href="#"><span style="color: #01a1FF">Dołącz d</span>o ligi zawodników</a></li>
+							<li><a href="dopobrania.html"><span style="color: #01a1FF">Do po</span>brania</a></li>
+						</ul>
+					</li>
+					</ol>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div class="pobierz">Ultra ważne materiały:<a href="brawo pobrałeś notatnik.zip">Pobierz</a></div>
+
+				<div class="footer1">
+					<div>Jakub Pacholski</div>
+					<div>&copy; Wszelkie prawa zastrzeżone</div>
+					<div id="zegar"></div>
+				</div> 
+</div>
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script>
+$(document).ready(function() {
+	var NavY = $('.header').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.header').addClass('sticky');
+	} else {
+		$('.header').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+
+</script>
+</body>
+</html>
